@@ -1,16 +1,16 @@
 \section{Methods}
 \label{sec:methods}
 
-The first section of this work focuses on improving the semantic segmentation of 3D scenes while the second one on accurately segmenting fine shapes. This work will use existing datasets containing isometric shapes such as FAUST \citep{bogo_faust_2014} containing 30 human scans in 10 different poses.
+The first section of this work focuses on improving the semantic segmentation of 3D scenes while the second one on accurately segmenting fine shapes.
 
-\subsection{Semantic segmentation using the video representation}
+\subheader{Semantic segmentation using the video representation}
 
 We propose two methods. The first one is based on a video multiview-rendering and the other on the voxel representation. The pipeline for both is similar.
 First, the input object or scene is transformed into the respective 2D representation. Second, object detection is performed on multiple viewpoints and the given set of labels using Grounding DINO. Unfortunately, Grounding DINO does not support video input yet. Third, semantic segmentation is performed using SAM 2 on both the rendering video and the video in voxel space. Forth, the segmentation images are backprojected (in method 1) or are already available and cleaned (in method 2).
 
 While method 2 directly operates in 3D space, it is unclear whether SAM 2 can accurately predicts segments in the \textit{voxel slice space} as it is a distribution shift from the image space it is trained on. Method 1, on the other hand, requires extensive processing due to projection and backprojection and has a possible loss of information due to unrendered segments of the 3D scene. 
 
-\subsection{Coarse to fine segmentation (if time permits)}
+\subheader{Coarse to fine segmentation (if time permits)}
 
 When instead of providing a list of labels the user provides a tree of labels, one can recursively segment parts of the scene in a coarse to fine manner. In that fashion, the system first segments the scene into coarse shapes before segmenting fine structures only in the regions in question. In human shape segmentation, this could be first the head and torso, and then eyes, mouth, nose just on the head.
 
