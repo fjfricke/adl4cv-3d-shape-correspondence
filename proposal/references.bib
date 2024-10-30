@@ -1,17 +1,154 @@
 
-@misc{abdelreheem_satr_2023,
-	title = {{SATR}: {Zero}-{Shot} {Semantic} {Segmentation} of {3D} {Shapes}},
-	shorttitle = {{SATR}},
-	url = {http://arxiv.org/abs/2304.04909},
-	doi = {10.48550/arXiv.2304.04909},
-	abstract = {We explore the task of zero-shot semantic segmentation of 3D shapes by using large-scale off-the-shelf 2D image recognition models. Surprisingly, we find that modern zero-shot 2D object detectors are better suited for this task than contemporary text/image similarity predictors or even zero-shot 2D segmentation networks. Our key finding is that it is possible to extract accurate 3D segmentation maps from multi-view bounding box predictions by using the topological properties of the underlying surface. For this, we develop the Segmentation Assignment with Topological Reweighting (SATR) algorithm and evaluate it on ShapeNetPart and our proposed FAUST benchmarks. SATR achieves state-of-the-art performance and outperforms a baseline algorithm by 1.3\% and 4\% average mIoU on the FAUST coarse and fine-grained benchmarks, respectively, and by 5.2\% average mIoU on the ShapeNetPart benchmark. Our source code and data will be publicly released. Project webpage: https://samir55.github.io/SATR/.},
+@article{ren_grounded_2024,
+	title = {Grounded {SAM}: {Assembling} {Open}-{World} {Models} for {Diverse} {Visual} {Tasks}},
+	copyright = {arXiv.org perpetual, non-exclusive license},
+	shorttitle = {Grounded {SAM}},
+	url = {https://arxiv.org/abs/2401.14159},
+	doi = {10.48550/ARXIV.2401.14159},
+	abstract = {We introduce Grounded SAM, which uses Grounding DINO as an open-set object detector to combine with the segment anything model (SAM). This integration enables the detection and segmentation of any regions based on arbitrary text inputs and opens a door to connecting various vision models. As shown in Fig.1, a wide range of vision tasks can be achieved by using the versatile Grounded SAM pipeline. For example, an automatic annotation pipeline based solely on input images can be realized by incorporating models such as BLIP and Recognize Anything. Additionally, incorporating Stable-Diffusion allows for controllable image editing, while the integration of OSX facilitates promptable 3D human motion analysis. Grounded SAM also shows superior performance on open-vocabulary benchmarks, achieving 48.7 mean AP on SegInW (Segmentation in the wild) zero-shot benchmark with the combination of Grounding DINO-Base and SAM-Huge models.},
+	urldate = {2024-10-30},
+	author = {Ren, Tianhe and Liu, Shilong and Zeng, Ailing and Lin, Jing and Li, Kunchang and Cao, He and Chen, Jiayu and Huang, Xinyu and Chen, Yukang and Yan, Feng and Zeng, Zhaoyang and Zhang, Hao and Li, Feng and Yang, Jie and Li, Hongyang and Jiang, Qing and Zhang, Lei},
+	year = {2024},
+	note = {Publisher: arXiv
+Version Number: 1},
+	keywords = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+}
+
+@misc{ravi_sam_2024,
+	title = {{SAM} 2: {Segment} {Anything} in {Images} and {Videos}},
+	shorttitle = {{SAM} 2},
+	url = {http://arxiv.org/abs/2408.00714},
+	doi = {10.48550/arXiv.2408.00714},
+	abstract = {We present Segment Anything Model 2 (SAM 2), a foundation model towards solving promptable visual segmentation in images and videos. We build a data engine, which improves model and data via user interaction, to collect the largest video segmentation dataset to date. Our model is a simple transformer architecture with streaming memory for real-time video processing. SAM 2 trained on our data provides strong performance across a wide range of tasks. In video segmentation, we observe better accuracy, using 3x fewer interactions than prior approaches. In image segmentation, our model is more accurate and 6x faster than the Segment Anything Model (SAM). We believe that our data, model, and insights will serve as a significant milestone for video segmentation and related perception tasks. We are releasing our main model, dataset, as well as code for model training and our demo.},
 	urldate = {2024-10-30},
 	publisher = {arXiv},
-	author = {Abdelreheem, Ahmed and Skorokhodov, Ivan and Ovsjanikov, Maks and Wonka, Peter},
-	month = aug,
+	author = {Ravi, Nikhila and Gabeur, Valentin and Hu, Yuan-Ting and Hu, Ronghang and Ryali, Chaitanya and Ma, Tengyu and Khedr, Haitham and Rädle, Roman and Rolland, Chloe and Gustafson, Laura and Mintun, Eric and Pan, Junting and Alwala, Kalyan Vasudev and Carion, Nicolas and Wu, Chao-Yuan and Girshick, Ross and Dollár, Piotr and Feichtenhofer, Christoph},
+	month = oct,
+	year = {2024},
+	note = {arXiv:2408.00714},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+}
+
+@article{ravi_sam_nodate,
+	title = {{SAM} 2: {Segment} {Anything} in {Images} and {Videos}},
+	language = {en},
+	author = {Ravi, Nikhila and Gabeur, Valentin and Hu, Yuan-Ting and Hu, Ronghang and Ryali, Chaitanya and Ma, Tengyu and Khedr, Haitham and Rädle, Roman and Rolland, Chloe and Gustafson, Laura and Mintun, Eric and Pan, Junting and Alwala, Vasudev and Carion, Nicolas and Wu, Chao-Yuan and Girshick, Ross and Dollár, Piotr and Feichtenhofer, Christoph},
+}
+
+@inproceedings{noauthor_sam_2024,
+	title = {{SAM} 2: {Segment} {Anything} in {Images} and {Videos}},
+	shorttitle = {{SAM} 2},
+	url = {https://openreview.net/forum?id=Ha6RTeWMd0},
+	abstract = {We present Segment Anything Model 2 (SAM 2), a foundation model towards solving promptable visual segmentation in images and videos. We build a data engine, which improves model and data via user interaction, to collect the largest video segmentation dataset to date. Our model is a simple transformer architecture with streaming memory for real-time video processing. SAM 2 trained on our data provides strong performance across a wide range of tasks. In video segmentation, we observe better accuracy, using 3x fewer interactions than prior approaches. In image segmentation, our model is more accurate and 6x faster than the Segment Anything Model (SAM). We believe that our data, model, and insights will serve as a significant milestone for video segmentation and related perception tasks. We are releasing our main model, the dataset, an interactive demo and code.},
+	language = {en},
+	urldate = {2024-10-30},
+	month = oct,
+	year = {2024},
+}
+
+@article{liu_grounding_2023,
+	title = {Grounding {DINO}: {Marrying} {DINO} with {Grounded} {Pre}-{Training} for {Open}-{Set} {Object} {Detection}},
+	shorttitle = {Grounding {DINO}},
+	url = {https://openreview.net/forum?id=DS5qRs0tQz},
+	abstract = {In this paper, we develop an open-set object detector, called Grounding DINO, by marrying Transformer-based detector DINO with grounded pre-training, which can detect arbitrary objects with human inputs such as category names or referring expressions. The key solution of open-set object detection is introducing language to a closed-set detector for open-set concept generalization. To effectively fuse language and vision modalities, we conceptually divide a closed-set detector into three phases and propose a tight fusion solution, which includes a feature enhancer, a language-guided query selection, and a cross-modality decoder for cross-modality fusion. While previous works mainly evaluate open-set object detection on novel categories, we propose to also perform evaluations on referring expression comprehension for objects specified with attributes. Grounding DINO performs remarkably well on all three settings, including benchmarks on COCO, LVIS, ODinW, and RefCOCO/+/g. Grounding DINO achieves a \$52.5\$ AP on the COCO detection zero-shot transfer benchmark, i.e., without any training data from COCO. It sets a new record on the ODinW zero-shot benchmark with a mean \$26.1\$ AP.},
+	language = {en},
+	urldate = {2024-10-30},
+	author = {Liu, Shilong and Zeng, Zhaoyang and Ren, Tianhe and Li, Feng and Zhang, Hao and Yang, Jie and Li, Chunyuan and Yang, Jianwei and Su, Hang and Zhu, Jun and Zhang, Lei},
+	month = oct,
 	year = {2023},
-	note = {arXiv:2304.04909},
-	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+}
+
+@inproceedings{liu_partslip_2023,
+	title = {{PartSLIP}: {Low}-{Shot} {Part} {Segmentation} for {3D} {Point} {Clouds} via {Pretrained} {Image}-{Language} {Models}},
+	shorttitle = {{PartSLIP}},
+	doi = {10.1109/CVPR52729.2023.02082},
+	author = {Liu, Minghua and Zhu, Yinhao and Cai, Hong and Han, Shizhong and Ling, Zhan and Porikli, Fatih and Su, Hao},
+	month = jun,
+	year = {2023},
+	pages = {21736--21746},
+}
+
+@article{kirillov_segment_2023,
+	title = {Segment {Anything}},
+	copyright = {https://doi.org/10.15223/policy-029},
+	url = {https://ieeexplore.ieee.org/document/10378323/},
+	doi = {10.1109/ICCV51070.2023.00371},
+	abstract = {We introduce the Segment Anything (SA) project: a new task, model, and dataset for image segmentation. Using our efficient model in a data collection loop, we built the largest segmentation dataset to date (by far), with over 1 billion masks on 11M licensed and privacy respecting images. The model is designed and trained to be promptable, so it can transfer zero-shot to new image distributions and tasks. We evaluate its capabilities on numerous tasks and find that its zero-shot performance is impressive – often competitive with or even superior to prior fully supervised results. We are releasing the Segment Anything Model (SAM) and corresponding dataset (SA-1B) of 1B masks and 11M images at segment-anything.com to foster research into foundation models for computer vision. We recommend reading the full paper at: arxiv.org/abs/2304.02643.},
+	urldate = {2024-10-30},
+	journal = {2023 IEEE/CVF International Conference on Computer Vision (ICCV)},
+	author = {Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C. and Lo, Wan-Yen and Dollár, Piotr and Girshick, Ross},
+	month = oct,
+	year = {2023},
+	note = {Conference Name: 2023 IEEE/CVF International Conference on Computer Vision (ICCV)
+ISBN: 9798350307184
+Place: Paris, France
+Publisher: IEEE},
+	pages = {3992--4003},
+}
+
+@misc{guo_sam2point_2024,
+	title = {{SAM2Point}: {Segment} {Any} {3D} as {Videos} in {Zero}-shot and {Promptable} {Manners}},
+	shorttitle = {{SAM2Point}},
+	url = {http://arxiv.org/abs/2408.16768},
+	abstract = {We introduce SAM2Point, a preliminary exploration adapting Segment Anything Model 2 (SAM 2) for zero-shot and promptable 3D segmentation. SAM2Point interprets any 3D data as a series of multi-directional videos, and leverages SAM 2 for 3D-space segmentation, without further training or 2D-3D projection. Our framework supports various prompt types, including 3D points, boxes, and masks, and can generalize across diverse scenarios, such as 3D objects, indoor scenes, outdoor environments, and raw sparse LiDAR. Demonstrations on multiple 3D datasets, e.g., Objaverse, S3DIS, ScanNet, Semantic3D, and KITTI, highlight the robust generalization capabilities of SAM2Point. To our best knowledge, we present the most faithful implementation of SAM in 3D, which may serve as a starting point for future research in promptable 3D segmentation. Online Demo: https://huggingface.co/spaces/ZiyuG/SAM2Point . Code: https://github.com/ZiyuGuo99/SAM2Point .},
+	urldate = {2024-10-30},
+	publisher = {arXiv},
+	author = {Guo, Ziyu and Zhang, Renrui and Zhu, Xiangyang and Tong, Chengzhuo and Gao, Peng and Li, Chunyuan and Heng, Pheng-Ann},
+	month = aug,
+	year = {2024},
+	note = {arXiv:2408.16768},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Computer Vision and Pattern Recognition},
+}
+
+@article{guo_sam2point_2024-1,
+	title = {{SAM2Point}: {Segment} {Any} {3D} as {Videos} in {Zero}-shot and {Promptable} {Manners}},
+	copyright = {arXiv.org perpetual, non-exclusive license},
+	shorttitle = {{SAM2Point}},
+	url = {https://arxiv.org/abs/2408.16768},
+	doi = {10.48550/ARXIV.2408.16768},
+	abstract = {We introduce SAM2Point, a preliminary exploration adapting Segment Anything Model 2 (SAM 2) for zero-shot and promptable 3D segmentation. SAM2Point interprets any 3D data as a series of multi-directional videos, and leverages SAM 2 for 3D-space segmentation, without further training or 2D-3D projection. Our framework supports various prompt types, including 3D points, boxes, and masks, and can generalize across diverse scenarios, such as 3D objects, indoor scenes, outdoor environments, and raw sparse LiDAR. Demonstrations on multiple 3D datasets, e.g., Objaverse, S3DIS, ScanNet, Semantic3D, and KITTI, highlight the robust generalization capabilities of SAM2Point. To our best knowledge, we present the most faithful implementation of SAM in 3D, which may serve as a starting point for future research in promptable 3D segmentation. Online Demo: https://huggingface.co/spaces/ZiyuG/SAM2Point . Code: https://github.com/ZiyuGuo99/SAM2Point .},
+	urldate = {2024-10-30},
+	author = {Guo, Ziyu and Zhang, Renrui and Zhu, Xiangyang and Tong, Chengzhuo and Gao, Peng and Li, Chunyuan and Heng, Pheng-Ann},
+	year = {2024},
+	note = {Publisher: arXiv
+Version Number: 1},
+	keywords = {Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+}
+
+@book{guo_sam2point_2024-2,
+	title = {{SAM2Point}: {Segment} {Any} {3D} as {Videos} in {Zero}-shot and {Promptable} {Manners}},
+	shorttitle = {{SAM2Point}},
+	abstract = {We introduce SAM2Point, a preliminary exploration adapting Segment Anything Model 2 (SAM 2) for zero-shot and promptable 3D segmentation. SAM2Point interprets any 3D data as a series of multi-directional videos, and leverages SAM 2 for 3D-space segmentation, without further training or 2D-3D projection. Our framework supports various prompt types, including 3D points, boxes, and masks, and can generalize across diverse scenarios, such as 3D objects, indoor scenes, outdoor environments, and raw sparse LiDAR. Demonstrations on multiple 3D datasets, e.g., Objaverse, S3DIS, ScanNet, Semantic3D, and KITTI, highlight the robust generalization capabilities of SAM2Point. To our best knowledge, we present the most faithful implementation of SAM in 3D, which may serve as a starting point for future research in promptable 3D segmentation. Online Demo: https://huggingface.co/spaces/ZiyuG/SAM2Point . Code: https://github.com/ZiyuGuo99/SAM2Point .},
+	author = {Guo, Ziyu and Zhang, Renrui and Zhu, Xiangyang and Tong, Chengzhuo and Gao, Peng and Li, Chunyuan and Heng, Pheng-Ann},
+	month = aug,
+	year = {2024},
+	doi = {10.48550/arXiv.2408.16768},
+}
+
+@inproceedings{abdelreheem_satr_2023,
+	title = {{SATR}: {Zero}-{Shot} {Semantic} {Segmentation} of {3D} {Shapes}},
+	shorttitle = {{SATR}},
+	doi = {10.1109/ICCV51070.2023.01392},
+	author = {Abdelreheem, Ahmed and Skorokhodov, Ivan and Ovsjanikov, Maks and Wonka, Peter},
+	month = oct,
+	year = {2023},
+	pages = {15120--15133},
+}
+
+@inproceedings{abdelreheem_zero-shot_2023,
+	address = {Sydney NSW Australia},
+	title = {Zero-{Shot} {3D} {Shape} {Correspondence}},
+	isbn = {9798400703157},
+	url = {https://dl.acm.org/doi/10.1145/3610548.3618228},
+	doi = {10.1145/3610548.3618228},
+	language = {en},
+	urldate = {2024-10-30},
+	booktitle = {{SIGGRAPH} {Asia} 2023 {Conference} {Papers}},
+	publisher = {ACM},
+	author = {Abdelreheem, Ahmed and Eldesokey, Abdelrahman and Ovsjanikov, Maks and Wonka, Peter},
+	month = dec,
+	year = {2023},
+	pages = {1--11},
 }
 
 @inproceedings{halimi_unsupervised_2019,
@@ -148,7 +285,7 @@
 	keywords = {Computer Science - Computer Vision and Pattern Recognition},
 }
 
-@misc{ravi_sam_2024,
+@misc{ravi_sam_2024-1,
 	title = {{SAM} 2: {Segment} {Anything} in {Images} and {Videos}},
 	shorttitle = {{SAM} 2},
 	url = {http://arxiv.org/abs/2408.00714},
@@ -191,7 +328,7 @@
 	keywords = {Computer Science - Computer Vision and Pattern Recognition},
 }
 
-@misc{ren_grounded_2024,
+@misc{ren_grounded_2024-1,
 	title = {Grounded {SAM}: {Assembling} {Open}-{World} {Models} for {Diverse} {Visual} {Tasks}},
 	shorttitle = {Grounded {SAM}},
 	url = {http://arxiv.org/abs/2401.14159},
@@ -231,7 +368,7 @@
 	keywords = {Computer Science - Computer Vision and Pattern Recognition, Electrical Engineering and Systems Science - Image and Video Processing},
 }
 
-@misc{guo_sam2point_2024,
+@misc{guo_sam2point_2024-3,
 	title = {{SAM2Point}: {Segment} {Any} {3D} as {Videos} in {Zero}-shot and {Promptable} {Manners}},
 	shorttitle = {{SAM2Point}},
 	url = {http://arxiv.org/abs/2408.16768},
@@ -257,6 +394,34 @@
 	month = aug,
 	year = {2024},
 	note = {arXiv:2408.13679},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+}
+
+@misc{kirillov_segment_2023-1,
+	title = {Segment {Anything}},
+	url = {http://arxiv.org/abs/2304.02643},
+	doi = {10.48550/arXiv.2304.02643},
+	abstract = {We introduce the Segment Anything (SA) project: a new task, model, and dataset for image segmentation. Using our efficient model in a data collection loop, we built the largest segmentation dataset to date (by far), with over 1 billion masks on 11M licensed and privacy respecting images. The model is designed and trained to be promptable, so it can transfer zero-shot to new image distributions and tasks. We evaluate its capabilities on numerous tasks and find that its zero-shot performance is impressive -- often competitive with or even superior to prior fully supervised results. We are releasing the Segment Anything Model (SAM) and corresponding dataset (SA-1B) of 1B masks and 11M images at https://segment-anything.com to foster research into foundation models for computer vision.},
+	urldate = {2024-10-27},
+	publisher = {arXiv},
+	author = {Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C. and Lo, Wan-Yen and Dollár, Piotr and Girshick, Ross},
+	month = apr,
+	year = {2023},
+	note = {arXiv:2304.02643},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
+}
+
+@misc{abdelreheem_zero-shot_2023-1,
+	title = {Zero-{Shot} {3D} {Shape} {Correspondence}},
+	url = {http://arxiv.org/abs/2306.03253},
+	doi = {10.48550/arXiv.2306.03253},
+	abstract = {We propose a novel zero-shot approach to computing correspondences between 3D shapes. Existing approaches mainly focus on isometric and near-isometric shape pairs (e.g., human vs. human), but less attention has been given to strongly non-isometric and inter-class shape matching (e.g., human vs. cow). To this end, we introduce a fully automatic method that exploits the exceptional reasoning capabilities of recent foundation models in language and vision to tackle difficult shape correspondence problems. Our approach comprises multiple stages. First, we classify the 3D shapes in a zero-shot manner by feeding rendered shape views to a language-vision model (e.g., BLIP2) to generate a list of class proposals per shape. These proposals are unified into a single class per shape by employing the reasoning capabilities of ChatGPT. Second, we attempt to segment the two shapes in a zero-shot manner, but in contrast to the co-segmentation problem, we do not require a mutual set of semantic regions. Instead, we propose to exploit the in-context learning capabilities of ChatGPT to generate two different sets of semantic regions for each shape and a semantic mapping between them. This enables our approach to match strongly non-isometric shapes with significant differences in geometric structure. Finally, we employ the generated semantic mapping to produce coarse correspondences that can further be refined by the functional maps framework to produce dense point-to-point maps. Our approach, despite its simplicity, produces highly plausible results in a zero-shot manner, especially between strongly non-isometric shapes. Project webpage: https://samir55.github.io/3dshapematch/.},
+	urldate = {2024-10-25},
+	publisher = {arXiv},
+	author = {Abdelreheem, Ahmed and Eldesokey, Abdelrahman and Ovsjanikov, Maks and Wonka, Peter},
+	month = sep,
+	year = {2023},
+	note = {arXiv:2306.03253},
 	keywords = {Computer Science - Computer Vision and Pattern Recognition},
 }
 
@@ -286,33 +451,5 @@
 	month = jun,
 	year = {2023},
 	note = {arXiv:2301.12597},
-	keywords = {Computer Science - Computer Vision and Pattern Recognition},
-}
-
-@misc{kirillov_segment_2023,
-	title = {Segment {Anything}},
-	url = {http://arxiv.org/abs/2304.02643},
-	doi = {10.48550/arXiv.2304.02643},
-	abstract = {We introduce the Segment Anything (SA) project: a new task, model, and dataset for image segmentation. Using our efficient model in a data collection loop, we built the largest segmentation dataset to date (by far), with over 1 billion masks on 11M licensed and privacy respecting images. The model is designed and trained to be promptable, so it can transfer zero-shot to new image distributions and tasks. We evaluate its capabilities on numerous tasks and find that its zero-shot performance is impressive -- often competitive with or even superior to prior fully supervised results. We are releasing the Segment Anything Model (SAM) and corresponding dataset (SA-1B) of 1B masks and 11M images at https://segment-anything.com to foster research into foundation models for computer vision.},
-	urldate = {2024-10-27},
-	publisher = {arXiv},
-	author = {Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C. and Lo, Wan-Yen and Dollár, Piotr and Girshick, Ross},
-	month = apr,
-	year = {2023},
-	note = {arXiv:2304.02643},
-	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning},
-}
-
-@misc{abdelreheem_zero-shot_2023,
-	title = {Zero-{Shot} {3D} {Shape} {Correspondence}},
-	url = {http://arxiv.org/abs/2306.03253},
-	doi = {10.48550/arXiv.2306.03253},
-	abstract = {We propose a novel zero-shot approach to computing correspondences between 3D shapes. Existing approaches mainly focus on isometric and near-isometric shape pairs (e.g., human vs. human), but less attention has been given to strongly non-isometric and inter-class shape matching (e.g., human vs. cow). To this end, we introduce a fully automatic method that exploits the exceptional reasoning capabilities of recent foundation models in language and vision to tackle difficult shape correspondence problems. Our approach comprises multiple stages. First, we classify the 3D shapes in a zero-shot manner by feeding rendered shape views to a language-vision model (e.g., BLIP2) to generate a list of class proposals per shape. These proposals are unified into a single class per shape by employing the reasoning capabilities of ChatGPT. Second, we attempt to segment the two shapes in a zero-shot manner, but in contrast to the co-segmentation problem, we do not require a mutual set of semantic regions. Instead, we propose to exploit the in-context learning capabilities of ChatGPT to generate two different sets of semantic regions for each shape and a semantic mapping between them. This enables our approach to match strongly non-isometric shapes with significant differences in geometric structure. Finally, we employ the generated semantic mapping to produce coarse correspondences that can further be refined by the functional maps framework to produce dense point-to-point maps. Our approach, despite its simplicity, produces highly plausible results in a zero-shot manner, especially between strongly non-isometric shapes. Project webpage: https://samir55.github.io/3dshapematch/.},
-	urldate = {2024-10-25},
-	publisher = {arXiv},
-	author = {Abdelreheem, Ahmed and Eldesokey, Abdelrahman and Ovsjanikov, Maks and Wonka, Peter},
-	month = sep,
-	year = {2023},
-	note = {arXiv:2306.03253},
 	keywords = {Computer Science - Computer Vision and Pattern Recognition},
 }
